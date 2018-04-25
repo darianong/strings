@@ -23,13 +23,13 @@ import java.util.Set;
  * </pre></em>
  * by applying any linear-time exact matching <em>k</em> times.
  * <p>
- * The Aho-Corasick algorithm, which wass invented by Alfred V. Aho and Margaret 
+ * The Aho-Corasick algorithm, which was invented by Alfred V. Aho and Margaret 
  * J. Corasick [1], is a classic solution to the exact set matching problem. It
  * works in time <em>O(n+m+z)</em>, where <em>z</em> is the number of pattern
  * occurrences in <em>T</em>. The algorithm is an extension of the Morris-Pratt
  * algorithm for multiple exact string matching. It uses a trie <em>trie(P)</em>
- * as an automaton and augments it with a failure function similar to the 
- * Morris-Pratt failure function (see {@link KnuthMorrisPratt}).
+ * (see {@link Trie}) as an automaton and augments it with a failure function
+ * similar to the Morris-Pratt failure function (see {@link KnuthMorrisPratt}).
  * <p>
  * The pseudo-code for the Aho-Corasick algorithm is as follows.
  * <pre>
@@ -175,6 +175,7 @@ import java.util.Set;
  *     Autumn 2013<br>
  * [3] Pekka Kilpelainen, "Biosequence Algorithms," lecture notes, Spring 2005.   
  * <p>
+ * @see Trie
  * @see KnuthMorrisPratt
  * @see BoyerMooreSimple
  */
